@@ -2,6 +2,8 @@ import React from 'react';
 import { Cloud } from 'lucide-react';
 import { Brain } from 'lucide-react';
 import { ShieldCheck } from 'lucide-react';
+import { Wrench } from 'lucide-react';
+import { Monitor } from 'lucide-react';
 
 export default function About({ show }) {
   return (
@@ -50,6 +52,28 @@ export default function About({ show }) {
               <h4 className="h4 service-item-title">Security Engineering</h4>
               <p className="service-item-text">
                 Vulnerability assessment, threat detection, and penetration testing.
+              </p>
+            </div>
+          </li>
+          <li className="service-item">
+            <div className="service-icon-box">
+              <Wrench color="#00ff41" size={40} />
+            </div>
+            <div className="service-content-box">
+              <h4 className="h4 service-item-title">DevOps & Automation</h4>
+              <p className="service-item-text">
+                Automate deployments, CI/CD pipelines, and infrastructure provisioning using Docker, GitHub Actions, and AWS services.
+              </p>
+            </div>
+          </li>
+          <li className="service-item">
+            <div className="service-icon-box">
+              <Monitor color="#00ff41" size={40} />
+            </div>
+            <div className="service-content-box">
+              <h4 className="h4 service-item-title">Fullstack Engineering</h4>
+              <p className="service-item-text">
+                Build end-to-end apps with React, REST APIs, and scalable backend integrations. Fast prototyping, clean UIs, and robust security.
               </p>
             </div>
           </li>

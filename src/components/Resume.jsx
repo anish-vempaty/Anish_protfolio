@@ -36,6 +36,15 @@ export default function Resume({ show }) {
         </div>
         <ol className="timeline-list">
           <li className="timeline-item">
+            <h4 className="h4 timeline-item-title">Data Engineering Intern, SRMIST</h4>
+            <span>Chennai, India | Jun 2022 – Dec 2022</span>
+            <p className="timeline-text">
+              • Developed automated web scraping tools to collect alumni data (Name, Phone, Address) from LinkedIn for graduates (1985–2015).<br />
+              • Designed ETL pipeline to clean, extract, and organize large datasets for institutional outreach.<br />
+              • Enhanced data collection efficiency by implementing robust error handling and batch processing.
+            </p>
+          </li>
+          <li className="timeline-item">
             <h4 className="h4 timeline-item-title">Cybersecurity Engineer Intern, Foxmula Corp</h4>
             <span>Bengaluru, India | Dec 2020 – Feb 2021</span>
             <p className="timeline-text">
@@ -65,7 +74,7 @@ export default function Resume({ show }) {
         <ol className="timeline-list">
           <li className="timeline-item">
             <h4 className="h4 timeline-item-title">CompTIA Security+</h4>
-            <span>2024</span>
+            <span>2025</span>
           </li>
           <li className="timeline-item">
             <h4 className="h4 timeline-item-title">MTA: Security Fundamentals</h4>
