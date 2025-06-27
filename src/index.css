@@ -1289,6 +1289,64 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .skills-item:not(:last-child) { margin-bottom: 25px; }
 
+  .project-detail {
+    background: rgba(12, 19, 12, 0.97); /* Matrixy, but more readable */
+    border-radius: 2rem;
+    color: #e5ffe8;
+    padding: 2.5rem 3.5rem 2.5rem 3.5rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    min-height: 85vh;
+    box-shadow: 0 0 24px 4px #00ff41cc;
+    font-size: 1.14rem;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+  }
+
+  .project-detail header {
+    margin-bottom: 2rem;
+  }
+
+  .project-detail h2 {
+    color: #00ff41;
+    font-size: 2.35rem;
+    margin-bottom: 0.6em;
+    font-family: 'JetBrains Mono', 'Fira Mono', 'Menlo', monospace;
+    letter-spacing: 0.04em;
+  }
+
+  .project-detail b, .project-detail strong {
+    color: #91ffb0;
+    font-weight: 700;
+  }
+
+  .project-detail ul, .project-detail ol {
+    margin: 1.2rem 0 1.5rem 2.5rem;
+  }
+
+  .project-detail pre, .project-detail code {
+    background: #1b2b19;
+    color: #a8ff60;
+    padding: 1.1rem 1.3rem;
+    border-radius: 10px;
+    overflow-x: auto;
+    margin: 1.2rem 0;
+    font-size: 1em;
+    line-height: 1.55;
+    font-family: 'JetBrains Mono', 'Fira Mono', 'Menlo', monospace;
+  }
+
+  .project-detail section {
+    margin-bottom: 2rem;
+  }
+
+  .project-detail h3 {
+    color: #18ff6d;
+    font-size: 1.23rem;
+    margin-top: 2.2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.02em;
+  }
 
 
   /**

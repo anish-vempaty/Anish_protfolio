@@ -1,9 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const projects = [
-  { title: 'Edge Device Cyber Threat Detection Using ML', category: 'AI / Cybersecurity', img: '/assets/images/project-edgectl.png', description: 'Real‑time network threat detection on Raspberry Pi...', link: 'https://github.com/anish-vempaty/edge-ml-threat-detection' },
+  { title: 'Edge Device Cyber Threat Detection Using ML', category: 'AI / Cybersecurity', img: '/assets/images/Raspi.png', 
+    description: 'Designed and deployed a real-time network intrusion detection system for edge devices (e.g., Raspberry Pi 5) using machine learning. Captures live network packets, extracts features, and locally classifies traffic as benign or malicious using a pre-trained ML model. Enables on-device cyber threat detection for IoT and small-network deployments—no cloud dependency required.', 
+    route: '/projects/edge-threat-detection' },
   { title: 'Cloud-Based Source Code Vulnerability Detector (AWS)', category: 'Cloud Security', img: '/assets/images/project-vulnscan.png', description: 'Serverless AWS app scanning GitHub repos for vulnerabilities...', link: 'https://github.com/Abhi270600/Cloud-Based-Source-Code-Vulnerability-Detector' },
-  { title: '3D Scene Reconstruction from Single Camera Video', category: 'Computer Vision', img: '/assets/images/project-3d.png', description: 'End-to-end 3D pipeline using COLMAP, MiDaS, NeRF...', link: 'https://github.com/anish-vempaty/3d-reconstruction' },
+  { title: '3D Scene Reconstruction from Single Camera Video', category: 'Computer Vision', img: '/assets/images/project-3d.png', description: 'End-to-end 3D pipeline using COLMAP, MiDaS, NeRF...', route: '/projects/ThreeDReconstruction' },
   {
   title: 'AI Code Assistant (Gemini Flash Edition)',
   category: 'AI / Productivity',
@@ -12,7 +15,7 @@ const projects = [
   link: 'https://github.com/anish-vempaty/ai-code-assistant'
 },
   { title: 'AI Chat Assistant App (Android)', category: 'Mobile / AI', img: '/assets/images/project-chat.png', description: 'Kotlin Android app using Gemini API with voice/chat...', link: 'https://github.com/anish-vempaty/android-ai-chat' },
-  { title: 'Volcano Project Security Self‑Assessment', category: 'Security Audit', img: '/assets/images/project-volcano.png', description: 'Threat model for CNCF Volcano project; community-driven.', link: 'https://github.com/anish-vempaty/volcano-security-assessment' },
+  { title: 'Volcano Project Security Self‑Assessment', category: 'Security Audit', img: '/assets/images/project-volcano.png', description: 'Threat model for CNCF Volcano project; community-driven.', link: 'https://github.com/volcano-sh/volcanot' },
   {
   title: 'Linux Disk I/O & System Call Benchmark Suite (NYU)',
   category: 'Systems / OS',
@@ -41,7 +44,7 @@ const projects = [
   { title: 'Vibe (Spotify‑Clone)', category: 'Web Dev', img: '/assets/images/project-vibe.png', description: '"Instagram for music" full‑stack app using Spotify API.', link: 'https://github.com/anish-vempaty/vibe' },
   { title: 'Perspective (VR Puzzle Game)', category: 'Game Dev', img: '/assets/images/project-perspective.png', description: 'Unity VR maze game with gravity-shifting puzzles.', link: 'https://github.com/anish-vempaty/perspective' },
   { title: 'Uberlytics (Uber Surge Visualizer)', category: 'Frontend / Data Viz', img: '/assets/images/project-uberlytics.png', description: 'Website visualizing UberRUSH surge trends via Firebase.', link: 'https://github.com/anish-vempaty/uberlytics' },
-  { title: 'ChatBox (Community Chat Platform)', category: 'App Dev', img: '/assets/images/project-chatbox.png', description: 'Elegant group chat app for communities.', link: 'https://github.com/anish-vempaty/chatbox' },
+  { title: 'ChatBox (Community Chat Platform)', category: 'App Dev', img: '/assets/images/project-chatbox.png', description: 'Elegant group chat app for communities.', link: 'https://github.com/anish-vempaty/firechat_1' },
   { title: 'Micello Integrations', category: 'API / Mapping', img: '/assets/images/project-micello.png', description: 'Indoor map integrations with FlightStats and Uber.', link: 'https://github.com/anish-vempaty/micello-integrations' },
   {
   title: 'Live Indian Railways Tweet Emergency Classifier',
@@ -69,15 +72,27 @@ export default function Portfolio({ show }) {
         <ul className="project-list">
           {projects.map((p, i) => (
             <li key={i} className="project-item active" data-category={p.category.toLowerCase()}>
-              <a href={p.link} target="_blank" rel="noopener noreferrer">
-                <figure className="project-img">
-                  <div className="project-item-icon-box"><span role="img" aria-label="eye">👁️</span></div>
-                  <img src={p.img} alt={p.title} loading="lazy" />
-                </figure>
-                <h3 className="project-title">{p.title}</h3>
-                <p className="project-category">{p.category}</p>
-                <p style={{ color: '#9fffa6' }}>{p.description}</p>
-              </a>
+              {p.route ? (
+                <Link to={p.route}>
+                  <figure className="project-img">
+                    <div className="project-item-icon-box"><span role="img" aria-label="eye">👁️</span></div>
+                    <img src={p.img} alt={p.title} loading="lazy" />
+                  </figure>
+                  <h3 className="project-title">{p.title}</h3>
+                  <p className="project-category">{p.category}</p>
+                  <p style={{ color: '#9fffa6' }}>{p.description}</p>
+                </Link>
+              ) : (
+                <a href={p.link} target="_blank" rel="noopener noreferrer">
+                  <figure className="project-img">
+                    <div className="project-item-icon-box"><span role="img" aria-label="eye">👁️</span></div>
+                    <img src={p.img} alt={p.title} loading="lazy" />
+                  </figure>
+                  <h3 className="project-title">{p.title}</h3>
+                  <p className="project-category">{p.category}</p>
+                  <p style={{ color: '#9fffa6' }}>{p.description}</p>
+                </a>
+              )}
             </li>
           ))}
         </ul>

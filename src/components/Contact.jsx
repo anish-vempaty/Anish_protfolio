@@ -32,8 +32,8 @@ export default function Contact({ show }) {
             </div>
             <div className="contact-info">
               <p className="contact-title">LinkedIn</p>
-              <a href="https://www.linkedin.com/in/anish-vempaty-ba73571aa/" className="contact-link" target="_blank" rel="noopener noreferrer">
-                linkedin.com/in/anish-vempaty-ba73571aa
+              <a href="https://www.linkedin.com/in/anish-vempaty/" className="contact-link" target="_blank" rel="noopener noreferrer">
+                linkedin.com/in/anish-vempaty/
               </a>
             </div>
           </li>
