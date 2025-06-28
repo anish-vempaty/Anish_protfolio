@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from 'react-router-dom';
 
 export default function ThreeDReconstruction() {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <article className="project-detail active">
         <button

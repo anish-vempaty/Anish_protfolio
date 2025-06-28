@@ -6,7 +6,7 @@ const projects = [
     description: 'Designed and deployed a real-time network intrusion detection system for edge devices (e.g., Raspberry Pi 5) using machine learning. Captures live network packets, extracts features, and locally classifies traffic as benign or malicious using a pre-trained ML model. Enables on-device cyber threat detection for IoT and small-network deployments—no cloud dependency required.', 
     route: '/projects/edge-threat-detection' },
   { title: 'Cloud-Based Source Code Vulnerability Detector (AWS)', category: 'Cloud Security', img: '/assets/images/project-vulnscan.png', description: 'Serverless AWS app scanning GitHub repos for vulnerabilities...', link: 'https://github.com/Abhi270600/Cloud-Based-Source-Code-Vulnerability-Detector' },
-  { title: '3D Scene Reconstruction from Single Camera Video', category: 'Computer Vision', img: '/assets/images/project-3d.png', description: 'End-to-end 3D pipeline using COLMAP, MiDaS, NeRF...', route: '/projects/ThreeDReconstruction' },
+  { title: '3D Scene Reconstruction from Single Camera Video', category: 'Computer Vision', img: '/assets/images/project-3d.png', description: 'End-to-end 3D pipeline using COLMAP, MiDaS, NeRF...', route: '/projects/3d-reconstruction' },
   {
   title: 'AI Code Assistant (Gemini Flash Edition)',
   category: 'AI / Productivity',
