@@ -11,6 +11,8 @@ export default function Sidebar() {
         <div className="info-content">
           <h1 className="name" title="Anish Vempaty">Anish Vempaty</h1>
           <p className="title">Cybersecurity Engineer</p>
+          <p className="tagline">M.S. Cybersecurity, NYU</p>
+          <p className="status">🚀 Open to Work</p>
         </div>
       </div>
       {/* Add contact/social info here */}

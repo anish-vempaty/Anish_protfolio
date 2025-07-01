@@ -2,20 +2,20 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const projects = [
-  { title: 'Edge Device Cyber Threat Detection Using ML', category: 'AI / Cybersecurity', img: 'assets/images/Raspi.png', 
+  { title: 'Edge Device Cyber Threat Detection Using ML', category: 'AI / Cybersecurity', img: '/assets/images/Raspi.png', 
     description: 'Designed and deployed a real-time network intrusion detection system for edge devices (e.g., Raspberry Pi 5) using machine learning. Captures live network packets, extracts features, and locally classifies traffic as benign or malicious using a pre-trained ML model. Enables on-device cyber threat detection for IoT and small-network deployments—no cloud dependency required.', 
     route: '/projects/edge-threat-detection' },
-  { title: 'Cloud-Based Source Code Vulnerability Detector (AWS)', category: 'Cloud Security', img: 'assets/images/cloudcode.jpeg', description: 'Serverless AWS app scanning GitHub repos for vulnerabilities...', link: 'https://github.com/Abhi270600/Cloud-Based-Source-Code-Vulnerability-Detector' },
-  { title: '3D Scene Reconstruction from Single Camera Video', category: 'Computer Vision', img: 'assets/images/3D_room.png', description: 'End-to-end 3D pipeline using COLMAP, MiDaS, NeRF...', route: '/projects/3d-reconstruction' },
+  { title: 'Cloud-Based Source Code Vulnerability Detector (AWS)', category: 'Cloud Security', img: '/assets/images/cloudcode.jpeg', description: 'Serverless AWS app scanning GitHub repos for vulnerabilities...', link: 'https://github.com/Abhi270600/Cloud-Based-Source-Code-Vulnerability-Detector' },
+  { title: '3D Scene Reconstruction from Single Camera Video', category: 'Computer Vision', img: '/assets/images/3D_room.png', description: 'End-to-end 3D pipeline using COLMAP, MiDaS, NeRF...', route: '/projects/3d-reconstruction' },
   {
   title: 'AI Code Assistant (Gemini Flash Edition)',
   category: 'AI / Productivity',
-  img: 'assets/images/project-ai-code-assistant.png', // Use a screenshot of your GUI!
+  img: '/assets/images/project-ai-code-assistant.png', // Use a screenshot of your GUI!
   description: `Desktop AI coding assistant with PyQt6 GUI — reviews, suggests, and auto-edits code using Google Gemini 2.5 Flash API. One-click VS Code integration and secure API key management.`,
   link: 'https://github.com/anish-vempaty/ai-code-assistant'
 },
-  { title: 'AI Chat Assistant App (Android)', category: 'Mobile / AI', img: 'assets/images/project-chat.png', description: 'Kotlin Android app using Gemini API with voice/chat...', link: 'https://github.com/anish-vempaty/android-ai-chat' },
-  { title: 'Volcano Project Security Self‑Assessment', category: 'Security Audit', img: 'assets/images/project-volcano.png', description: 'Threat model for CNCF Volcano project; community-driven.', link: 'https://github.com/volcano-sh/volcanot' },
+  { title: 'AI Chat Assistant App (Android)', category: 'Mobile / AI', img: '/assets/images/AI_android.png', description: 'Kotlin Android app using Gemini API with voice/chat...', route: '/projects/ai-chat-app' },
+  { title: 'Volcano Project Security Self‑Assessment', category: 'Security Audit', img: '/assets/images/project-volcano.png', description: 'Threat model for CNCF Volcano project; community-driven.', link: 'https://github.com/volcano-sh/volcano' },
   {
   title: 'Linux Disk I/O & System Call Benchmark Suite (NYU)',
   category: 'Systems / OS',
@@ -24,9 +24,9 @@ const projects = [
   link: 'https://github.com/anish-vempaty/Intro_to_OS_NYU_final_project'
 },
 
-  { title: 'DeepFake Detection Using CNN‑LSTM', category: 'Deep Learning', img: '/assets/images/project-deepfake.png', description: 'Hybrid CNN-LSTM model with Flask UI and Grad-CAM.', link: 'https://github.com/anish-vempaty/deepfake-detector' },
+  { title: 'DeepFake Detection Using CNN‑LSTM', category: 'Deep Learning', img: '/assets/images/Deepfake.png', description: 'Hybrid CNN-LSTM model with Flask UI and Grad-CAM.', route: '/projects/deepfake-detection' },
   { title: 'AI-Enhanced WiFi Decryption (Pwnagotchi)', category: 'Edge AI / Security', img: '/assets/images/project-pwnagotchi.png', description: 'RL-powered handshake capture & decryption on Pi Zero.', link: 'https://github.com/anish-vempaty/pwnagotchi_v2' },
-  { title: 'AI-Powered Coding Mentor', category: 'GenAI / EdTech', img: '/assets/images/project-coding-mentor.png', description: 'GPT-3.5 assistant for code explainability & debugging.', link: 'https://github.com/anish-vempaty/coding-mentor-llm' },
+  { title: 'AI-Powered Coding Mentor', category: 'GenAI / EdTech', img: '/assets/images/AI_coding.png', description: 'GPT-3.5 assistant for code explainability & debugging.', route: '/projects/ai-coding-mentor' },
   {
   title: 'Dining Concierge Chatbot (Serverless Microservices, NYU)',
   category: 'Cloud / AWS',
@@ -41,11 +41,18 @@ const projects = [
   description: `AI-powered web photo album using AWS S3, Lambda, Rekognition, Lex, OpenSearch. Upload, auto-label, and natural language search photos from a beautiful cloud-hosted frontend.`,
   link: 'https://github.com/anish-vempaty/AI-photo-album'
 },
-  { title: 'Vibe (Spotify‑Clone)', category: 'Web Dev', img: '/assets/images/project-vibe.png', description: '"Instagram for music" full‑stack app using Spotify API.', link: 'https://github.com/anish-vempaty/vibe' },
-  { title: 'Perspective (VR Puzzle Game)', category: 'Game Dev', img: '/assets/images/project-perspective.png', description: 'Unity VR maze game with gravity-shifting puzzles.', link: 'https://github.com/anish-vempaty/perspective' },
-  { title: 'Uberlytics (Uber Surge Visualizer)', category: 'Frontend / Data Viz', img: '/assets/images/project-uberlytics.png', description: 'Website visualizing UberRUSH surge trends via Firebase.', link: 'https://github.com/anish-vempaty/uberlytics' },
+  { title: 'Vibe (Spotify‑Clone)', category: 'Web Dev', img: '/assets/images/Vibe.png', description: '"Instagram for music" full‑stack app using Spotify API.', route: '/projects/vibe' },
+  { title: 'Perspective (VR Puzzle Game)', category: 'Game Dev', img: '/assets/images/VR (2).png', description: 'Unity VR maze game with gravity-shifting puzzles.', route: '/projects/perspective' },
+  { title: 'Uberlytics (Uber Surge Visualizer)', category: 'Frontend / Data Viz', img: '/assets/images/Uberlitics.png', description: 'Website visualizing UberRUSH surge trends via Firebase.', route: '/projects/uberlytics' },
   { title: 'ChatBox (Community Chat Platform)', category: 'App Dev', img: '/assets/images/project-chatbox.png', description: 'Elegant group chat app for communities.', link: 'https://github.com/anish-vempaty/firechat_1' },
-  { title: 'Micello Integrations', category: 'API / Mapping', img: '/assets/images/project-micello.png', description: 'Indoor map integrations with FlightStats and Uber.', link: 'https://github.com/anish-vempaty/micello-integrations' },
+  { title: 'Micello Integrations', category: 'API / Mapping', img: '/assets/images/project-micello.png', description: 'Indoor map integrations with FlightStats and Uber.', route: '/projects/micello-integrations' },
+  {
+    title: 'AI Crash',
+    category: 'AI / Simulation',
+    img: '/assets/images/AI_car_crash.png',
+    description: 'Simulating AI crashes and analyzing the causes.',
+    route: '/projects/ai-crash'
+  },
   {
   title: 'Live Indian Railways Tweet Emergency Classifier',
   category: 'NLP / Streaming AI',

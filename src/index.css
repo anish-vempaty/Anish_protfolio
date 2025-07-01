@@ -1698,6 +1698,56 @@ textarea.form-input::-webkit-resizer { display: none; }
     visibility: visible;
   }
 
+  /* Sidebar tagline: subtle green, slightly smaller */
+.sidebar .tagline {
+  font-size: 1rem;
+  color: #9fffa6;
+  margin: 6px 0 0 0;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  opacity: 0.85;
+}
+
+/* Sidebar status: brighter green highlight, pill look */
+.sidebar .status {
+  font-size: 0.98rem;
+  color: var(--matrix-green);
+  background: rgba(0,255,65,0.13);
+  border-radius: 12px;
+  padding: 4px 13px 4px 10px;
+  margin: 6px 0 0 0;
+  display: inline-block;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  box-shadow: 0 0 7px 1px #00ff4190;
+  transition: background 0.28s;
+}
+.sidebar .status:hover {
+  background: rgba(0,255,65,0.22);
+}
+
+/* Sidebar resume button: neon Matrix pill */
+.sidebar-resume .resume-btn {
+  display: block;
+  margin: 16px auto 0 auto;
+  background: var(--matrix-green-gradient);
+  color: #181e1b;
+  font-weight: 700;
+  border: none;
+  border-radius: 16px;
+  padding: 10px 28px;
+  font-size: 1.02rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 0 18px 1px #00ff41aa;
+  transition: background 0.25s, color 0.16s, box-shadow 0.19s;
+}
+.sidebar-resume .resume-btn:hover {
+  background: linear-gradient(90deg, #00ff41 15%, #00bfff 95%);
+  color: #141d13;
+  box-shadow: 0 0 32px 4px #00ffc2bb;
+}
   .contacts-list { grid-template-columns: 1fr; }
 
   .contact-info :is(.contact-link) {

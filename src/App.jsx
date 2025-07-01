@@ -10,6 +10,7 @@ import Vibe from './projectpages/Vibe';
 import PerspectiveVR from './projectpages/PerspectiveVR';
 import Uberlytics from './projectpages/Uberlytics';
 import MicelloIntegrations from './projectpages/MicelloIntegrations';
+import AICrash from './projectpages/AICrash';
 
 import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
@@ -54,6 +55,7 @@ export default function App() {
           <Route path="/projects/perspective" element={<PerspectiveVR />} />
           <Route path="/projects/uberlytics" element={<Uberlytics />} />
           <Route path="/projects/micello-integrations" element={<MicelloIntegrations />} />
+          <Route path="/projects/ai-crash" element={<AICrash />} />
         </Routes>
       )}
     </Router>
