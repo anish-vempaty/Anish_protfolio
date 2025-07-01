@@ -13,7 +13,7 @@ export default function About({ show }) {
       </header>
       <section className="about-text">
         <p>
-          Recent MS in Cybersecurity graduate from NYU with strong experience in backend development, cloud infrastructure, and system design. Proficient in building scalable, secure applications using AWS, REST APIs, and containerized environments.
+          MS in Cybersecurity graduate from NYU with strong experience in backend development, cloud infrastructure, and system design. Proficient in building scalable, secure applications using AWS, REST APIs, and containerized environments.
         </p>
         <p>
           Passionate about delivering clean, maintainable code and solving real-world engineering problems.

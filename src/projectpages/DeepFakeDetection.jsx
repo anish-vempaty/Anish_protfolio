@@ -1,8 +1,25 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 
 export default function DeepFakeDetection() {
+  const navigate = useNavigate();
   return (
     <article className="project-detail active">
+        <button
+        className="back-btn"
+        onClick={() => navigate('/')}
+        style={{
+          background: 'none',
+          color: '#00ff41',
+          border: 'none',
+          fontSize: '1.1rem',
+          cursor: 'pointer',
+          marginBottom: '2rem',
+          textDecoration: 'underline',
+        }}
+      >
+        ← Back to Portfolio
+      </button>
       <header>
         <h2 className="h2">DeepFake Detection Using CNN‑LSTM</h2>
       </header>
@@ -56,6 +73,21 @@ cam = GradCAM(model=model, target_layers=[model.cnn.layer4])
 grayscale_cam = cam(input_tensor=input_tensor)
 `}</pre>
       </section>
+      <button
+        className="back-btn"
+        onClick={() => navigate('/')}
+        style={{
+          background: 'none',
+          color: '#00ff41',
+          border: 'none',
+          fontSize: '1.1rem',
+          cursor: 'pointer',
+          marginBottom: '2rem',
+          textDecoration: 'underline',
+        }}
+      >
+        ← Back to Portfolio
+      </button>
     </article>
   );
 }

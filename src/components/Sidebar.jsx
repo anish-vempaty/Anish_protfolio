@@ -14,6 +14,11 @@ export default function Sidebar() {
           <p className="tagline">M.S. Cybersecurity, NYU</p>
           <p className="status">🚀 Open to Work</p>
         </div>
+        <div className="sidebar-resume">
+          <a href="allmix_anish.pdf" download className="resume-btn">
+            Download CV
+          </a>
+        </div>
       </div>
       {/* Add contact/social info here */}
     </aside>

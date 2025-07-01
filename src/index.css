@@ -2,6 +2,8 @@
 
   /* Matrix Theme Colors */
   --matrix-green: #00ff41;
+  --matrix-purple: #bb00ff;
+  --diagonal-glow-gradient: linear-gradient(135deg, #00ff41 10%, #bb00ff 90%);
   --matrix-green-glow: 0 0 8px #00ff41, 0 0 16px #00ff41;
   --matrix-green-gradient: linear-gradient(90deg, #00ff41 0%, #17ff6c 100%);
   --bg-gradient-onyx: linear-gradient(

@@ -1,8 +1,25 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 
 export default function AIChatAssistantApp() {
+  const navigate = useNavigate();
   return (
     <article className="project-detail active">
+        <button
+        className="back-btn"
+        onClick={() => navigate('/')}
+        style={{
+          background: 'none',
+          color: '#00ff41',
+          border: 'none',
+          fontSize: '1.1rem',
+          cursor: 'pointer',
+          marginBottom: '2rem',
+          textDecoration: 'underline',
+        }}
+      >
+        ← Back to Portfolio
+      </button>
       <header>
         <h2 className="h2">AI Chat Assistant App (Android)</h2>
       </header>
@@ -50,6 +67,21 @@ fun ChatBubble(text: String, isUser: Boolean) {
 }
 `}</pre>
       </section>
+      <button
+        className="back-btn"
+        onClick={() => navigate('/')}
+        style={{
+          background: 'none',
+          color: '#00ff41',
+          border: 'none',
+          fontSize: '1.1rem',
+          cursor: 'pointer',
+          marginBottom: '2rem',
+          textDecoration: 'underline',
+        }}
+      >
+        ← Back to Portfolio
+      </button>
     </article>
   );
 }

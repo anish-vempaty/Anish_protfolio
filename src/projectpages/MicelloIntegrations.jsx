@@ -1,8 +1,25 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 
 export default function MicelloIntegrations() {
+  const navigate = useNavigate();
   return (
     <article className="project-detail active">
+        <button
+        className="back-btn"
+        onClick={() => navigate('/')}
+        style={{
+          background: 'none',
+          color: '#00ff41',
+          border: 'none',
+          fontSize: '1.1rem',
+          cursor: 'pointer',
+          marginBottom: '2rem',
+          textDecoration: 'underline',
+        }}
+      >
+        ← Back to Portfolio
+      </button>
       <header>
         <h2 className="h2">Micello Integrations</h2>
       </header>
@@ -81,6 +98,21 @@ function fetchFlightStatusWidget(gate) {
           <li>Plug-and-play integrations for multiple external data providers</li>
         </ul>
       </section>
+      <button
+        className="back-btn"
+        onClick={() => navigate('/')}
+        style={{
+          background: 'none',
+          color: '#00ff41',
+          border: 'none',
+          fontSize: '1.1rem',
+          cursor: 'pointer',
+          marginBottom: '2rem',
+          textDecoration: 'underline',
+        }}
+      >
+        ← Back to Portfolio
+      </button>
     </article>
   );
 }
